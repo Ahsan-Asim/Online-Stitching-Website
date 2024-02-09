@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+    box-sizing: border-box;/*For complete page*/
+}
+
+
+
+ body{
+    font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+                background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;       /*Scroll so pic can also move when we scroll the screen*/ 
+    padding: 0px;
+     
+     /*The style for body will be apply on complete tags etc and further styles we will apply to specific tage*/
+
+ }
+ .container1{
+      position: sticky;
+      top: 0; /* Stick to the top of the viewport */
+      z-index: 100;
+      margin-top: 0;
+ }
+
+ 
+ .Container{/*This designing will be applied on the form because Form is actually inside a container*/
+
+    width: 50%;
+    border-radius: 5px;
+    padding: 35px;
+    margin-left: 350px;
+    background-color: #fff;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+ }
+
+ h1{
+    text-decoration: underline;
+    width: 100%;
+    padding-left: 550px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+
+
+ fieldset{
+    background-color: white;
+ }
+
+input[type="text"],
+input[type="Number"],
+input[type="Date"],
+input[type="Password"],
+input[type="Email"],
+select,textarea
+{
+    /*Background-color property will be apply on all input containers*/
+    width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;}
+
+input[type="submit"]
+{/*Designing of the submit button*/
+background-color: #ccc;
+border: 2px solid black;
+border-radius: 2px;
+width: 100%;
+margin-top: 20px;
+
+}
+
+input[type="submit"]:hover{/*Color change property of the submit button*/
+background-color: lightblue;
+}
+
+nav {/*Style of the vaigation*/
+background-color: #333;
+overflow: hidden;
+border: black5px solid;
+border-radius: 10px;
+}
+
+nav a {
+text-decoration: none;
+padding: 20px;
+text-align: center;
+float: left;
+color: white;
+
+}
+
+nav a:hover{
+color: blue;
+}
+
+#Size_Pic{
+    width: 350px;
+    
+}
+
+/*The basic style startegy behind this form is that: firstly we design the bode which means it will be applied
+to all things in the page and then I apply properties using Container class which is actually container
+for the form and then i apply color etc properties on the input tags and then Navigation designing and that's it!*/
+
+    </style>
+    <title>Designed Form</title>
+
+     
+</head>
+
+<!--The below is the body which contains the basic of html which is structure of this Form-->
+<body>
+    <!--The below nav tag is used to provide navigation for taking any help-->
+    <div class="container1">
+    <nav>
+        <a href="About.html">Contact Us</a>
+        <a href="#">Help</a>
+    </nav>
+</div>
+
+
+    <!--The below code inside form tag is used to make form that contains all required info-->
+
+    <h1>Order Details</h1><!--Main Heading-->
+
+    <div class="Container"><!--I make a container so I can give style to form separately from the body-->
+        <form>
+
+
+            <p>Name:*<input type="text"  name="Name" required placeholder="Ahsan Asim"></p>
+
+            <p>Address: * <textarea name="Address" id="Address" cols="20" rows="10" required placeholder="Enter your Address"></textarea></p>
+
+            <p>Number:*<input type="Number" name="Number" required placeholder="Mobile Number"></p>
+
+            <p>Email:*<input type="Email" name="Email" required placeholder="ahsanasim@gmail.com"></p>
+
+            <fieldset>
+                <legend>Type</legend>
+                <p>Gents:*<input type="radio" name="Gender" id="Gender"> Ladies:*<input type="radio"
+                    id="Gender" ></p>
+            </fieldset>
+
+            <input type="submit" name="submit">
+        </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+    box-sizing: border-box;/*For complete page*/
+}
+
+
+
+ body{
+    /*background-image: url(Notes1/BI.jpg);Background image*/
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;       /*Scroll so pic can also move when we scroll the screen*/ 
+    padding: 0px;
+     font-family: Arial, sans-serif;
+     
+     /*The style for body will be apply on complete tags etc and further styles we will apply to specific tage*/
+
+ }
+ .container1{
+   background-color: #f1eded;
+   border: 2px solid #c4b3b3;
+   border-radius: 10px;
+      position: sticky;
+      top: 0; /* Stick to the top of the viewport */
+      z-index: 100;
+      margin-top: 0;
+ }
+
+ 
+ .Container{/*This designing will be applied on the form because Form is actually inside a container*/
+    background-color: #f1eded;
+    border: 2px solid #c4b3b3;
+    border-radius: 10px;
+    width: 50%;
+    border-radius: 2px;
+    padding: 15px;
+    margin-left: 350px;
+ }
+
+ h1{
+    padding-left: 190px;
+    text-decoration: underline;
+    background-color: #f1eded;
+    width: 50%;
+    border: 2px solid #c4b3b3;
+    margin-left: 350px;
+ }
+
+ h2{
+    padding-left: 190px;
+    background-color: #f1eded;
+    text-decoration: underline;
+    border: 2px solid #c4b3b3;
+
+    /*I have write the css code of h1 and h2 separately because of the border because h1 should be 50% but
+    h2 border 100% I want*/
+ }
+
+ fieldset{
+    background-color: #f1eded;
+ }
+
+input[type="text"],
+input[type="Number"],
+input[type="Date"],
+input[type="Password"],
+input[type="Email"],
+select,textarea
+{
+    /*Background-color property will be apply on all input containers*/
+
+        margin-top: 15px;
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+input[type="submit"]
+{/*Designing of the submit button*/
+background-color: #f1eded;
+border: 2px solid #c4b3b3;
+border-radius: 2px;
+width: 100%;
+}
+
+input[type="submit"]:hover{/*Color change property of the submit button*/
+background-color: #c4b3b3;
+}
+
+nav {/*Style of the vaigation*/
+overflow: hidden;
+border: black5px solid;
+border-radius: 10px;
+}
+
+nav a {
+text-decoration: none;
+padding: 20px;
+text-align: center;
+float: left;
+color: black;
+
+}
+
+nav a:hover{
+color: #c4b3b3;
+}
+
+/*The basic style startegy behind this form is that: firstly we design the bode which means it will be applied
+to all things in the page and then I apply properties using Container class which is actually container
+for the form and then i apply color etc properties on the input tags and then Navigation designing and that's it!*/
+
+    </style>
+    <title>Designed Form</title>
+
+     
+</head>
+
+<!--The below is the body which contains the basic of html which is structure of this Form-->
+<body>
+    <!--The below nav tag is used to provide navigation for taking any help-->
+    <div class="container1">
+    <nav>
+        <a href="#">Contact Us</a>
+        <a href="#">Help</a>
+    </nav>
+</div>
+
+    <!--The below code inside form tag is used to make form that contains all required info-->
+
+    <h1>Payment Form</h1><!--Main Heading-->
+
+    <div class="Container"><!--I make a container so I can give style to form separately from the body-->
+        <form>
+
+            <p>Name:*<input type="text"  name="Name" required placeholder="Ahsan Asim"></p>
+
+            <p>Address: * <textarea name="Address" id="Address" cols="20" rows="10" required placeholder="Enter your Address"></textarea></p>
+
+            <p>Number:*<input type="Number" name="Number" required placeholder="Mobile Number"></p>
+
+            <p>Email:*<input type="Email" name="Email" required placeholder="ahsanasim@gmail.com"></p>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <p>Male:*<input type="radio" name="Gender" id="Gender"> Female:*<input type="radio"
+                    id="Gender" ></p>
+            </fieldset>
+
+            <h2>Payment Information</h2>
+
+            <p>Card_Type
+                <select name="Card-Type" id="Card-Type">
+                    <option value="">--Select Card Type--</option>
+                    <option value="HB">HB</option>
+                    <option value="FB">FB</option>
+                </select>
+            </p>
+
+            <p>Card_Number:*<input type="Number" name="Card-Number" required placeholder="1234..."></p>
+
+            <p>Expiry_Date:*<input type="Date" name="Expiry_Date"></p>
+
+            <p>Password:*<input type="Password" name="Password" required placeholder="Atleast 8 characters"></p>
+
+            <input type="submit" onclick="openNewPage()" name="submit">
+        </form>
+
+    </div>
+
+    <script>
+        function openNewPage() {
+            // Replace 'newpage.html' with the URL of the page you want to open.
+            window.open('Order.html', '_blank');
+        }
+    </script>
+</body>
+</html>

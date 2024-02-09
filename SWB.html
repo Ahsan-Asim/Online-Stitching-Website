@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <style>
+
+     body{
+        margin: 0;
+    padding: 0;
+    }
+
+        .Main-Heading{
+            background-color: #c4b3b3;
+            text-align: center;
+            color: black;
+            font-family: Arial, sans-serif;
+            font-size:x-large;  
+            margin: 0px;
+            padding: 0;
+            width: 100%;
+            height: 30px;
+        }
+      
+        
+      
+        
+        .Items-container{
+                    display: grid;
+                    grid-template-columns: 350px 150px 150px 122px 190px 150px; 
+                                background-color: #302e2e(300,300,300);
+                   /*background-color: #C0C0C0;*/
+                   /* background-color: rgba(0, 0, 0, 0.404); */
+                   grid-auto-rows: minmax(80px,auto);
+                   grid-auto-columns: minmax(50px,auto);
+                   margin: 0;
+                   padding: 0;
+                }
+
+
+                  .container{
+            position: sticky;
+            top: 0; /* Stick to the top of the viewport */
+            z-index: 100;
+            margin-top: 0;
+        }
+        .Items a {
+            color: black; /* Default link color */
+            text-decoration: none; /* Remove underlines from links */
+            font-size: x-large;
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        .Items a:hover {
+            color: #c4b3b3; /* Change link color on hover */
+        }
+
+       
+        /* #D6{
+             width: 350px;
+            text-align: center;
+            margin-top: 40px;
+            margin-right: 200px;
+            color:White;
+            /* background-color: silver; 
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            grid-row-start: 1;
+            grid-column-start: 4; 
+} */
+
+.container h1{
+             width: 350px;
+             /* text-align: justify; */
+            margin-top: 40px;
+            padding-right: 200px;
+            color:White;
+            /* background-color: silver; */
+            font-size: x-large;
+            font-family:'Times New Roman', Times, serif;
+            grid-row-start: 1;
+            grid-column-start: 3; */
+}
+        #D1{
+            color: #888;
+            margin-top: 40px;
+            grid-row-start: 2;
+            grid-column-start: 2;
+        }
+
+        #D2{
+            
+            margin-top: 40px;
+            grid-row-start: 2;
+            grid-column-start: 3;
+        }
+
+        #D3{
+            margin-top: 40px;
+            grid-row-start: 2;
+            grid-column-start: 4;
+        }
+
+        #D4{
+            margin-top: 40px;
+            grid-row-start: 2;
+            grid-column-start: 5;
+        }
+
+        #D5{
+            margin-top: 40px;
+            grid-row-start: 2;
+            grid-column-start: 6;
+        }
+
+        #D7{
+            grid-row-start: 2;
+            grid-column-start: 8;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #D7 button {
+            padding: 10px 20px;
+            margin-right: 100px;
+            background-color: #f1eded;
+            border: 2px solid #c4b3b3;
+            color: black;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+           /* position: fixed; */
+        }
+
+        #D7 button:hover {
+        background-color: #c4b3b3;
+        transform: scale(1.05);
+        }
+
+    
+
+        .S1{
+            background-color: #f1eded;
+            background-image: url("BI.jpg");
+            margin: 0;
+            width: 100%;
+            height: 700px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: scroll;       /*Scroll so pic can also move when we scroll the screen*/ 
+            padding: 0px;
+        }
+
+
+        .S1 h1{
+            margin: 0;
+                padding: 200px 0; /* Adjust vertical and horizontal padding as needed */
+                text-align: center;
+                color: #c4b3b3;
+                font-size: 8em; /* Adjust the font size to make it larger */
+                font-style: italic;
+        }
+     
+
+@media screen and (max-width: 1280px){
+
+.container{
+
+    width: 100%;
+
+}
+
+}
+
+@media screen and (max-width: 770px){
+
+.Items-container{
+
+    display: grid;
+    cursor: pointer;
+    grid-column: 3;
+    padding-right: 10px;
+
+}
+
+#D7{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1/4;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease-in-out 0.6s;
+
+}
+
+.nav_checkbox input:checked ~ .content_nav{
+
+    max-height: 500px;
+
+}
+
+.content_nav li{
+
+    padding: 15px 0px;
+
+}
+
+
+}
+
+.S2{
+    background-color: #f1eded;
+    overflow: hidden;
+}
+
+.D1{
+  
+    padding: 50px;
+    float: left;
+    margin: 30px;
+}
+
+#P1{
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border: 3px solid #c4b3b3;
+    border-radius: 3px;
+
+}
+
+#P2{
+    margin-right: 20px;
+    margin-top: 30px;
+    border: 3px solid #c4b3b3;
+    border-radius: 3px;
+
+
+}
+
+.S2 h1{
+    margin-top: 90px;
+
+       color: #c4b3b3;
+       text-align: center;
+       font-size: xx-large;
+       font-family:Arial, sans-serif;
+}
+
+
+.S2 h2{
+    color: #c4b3b3;
+       text-align: center;
+       font-family:Arial, sans-serif;
+
+}
+      
+.S2 p{
+    color: black;
+    text-align: justify;
+    margin-right: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    line-height: 30px;
+}
+
+
+/*#Learn_Button button {
+    margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        #Learn_Button button:hover {
+        background-color: #2980b9;
+        transform: scale(1.05);
+        }*/
+
+
+        #Learn_Button button {
+    margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f1eded;
+            border: 2px solid #c4b3b3;
+            color: black;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: background-color 0s, width 0s;
+            text-decoration: none;
+
+        }
+
+        #Learn_Button button:hover {
+        background-color: #c4b3b3;
+        width: 600px;
+        height: 50px;
+        text-decoration: none;
+
+        }
+
+       .S3{
+        background-color: #f1eded;
+       }
+
+        .S3 h1{
+            margin-top: 100px;
+            text-align: center;
+            font-size: xx-large;
+            font-family: Arial, sans-serif;;
+        }
+
+        .S3 p{
+            color: #888;
+            text-align: center;
+        }
+
+
+
+        .FlexBox1{
+       
+       display: flex;/*The boxes willflex-wrap: wrap;/*When we minimize the screen, so the boxes will be cut down instead of making small*/
+      /* flex-direction: row-reverse;*//*It can be 'colum'/'column-reverse'/'row'/'row-reverse'*/
+       align-content: flex-end;/*Inorder to use property of align-content, we have to remove the height of the boxes*/
+       background-color: #f1eded;
+       margin-left: 20px;
+       margin-right: 20px;
+       margin-top: 50px;
+       font-family: Arial, sans-serif;;
+    }
+
+   .Box{
+      
+       width: 100%;
+       /*height: 500px;*/
+      height: 300px;
+   }
+   #Box1 h1{
+   margin-top: 30px;
+    text-align: center;
+    font-size: x-large;
+    color: black;
+       /*order: 4; order basically use to change position of a box*/
+       /*flex-basis: 400px;/*its use to make box width more or less than others*/
+      /* flex-grow: 2px;/*The grow speed will be 2%*/
+     /* flex-shrink: 2;*/
+
+   }
+   #Box1 p{
+    background-color: #f1eded;
+    color: black;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 45px;
+
+   }
+
+   #Box2 h1{
+   margin-top: 30px;
+    text-align: center;
+    font-size: x-large;
+    color: black;
+       /*order: 4; order basically use to change position of a box*/
+       /*flex-basis: 400px;/*its use to make box width more or less than others*/
+      /* flex-grow: 2px;/*The grow speed will be 2%*/
+     /* flex-shrink: 2;*/
+
+   }
+   #Box2 p{
+    background-color: #f1eded;
+    color: black;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+
+   }
+
+
+   #Box3 h1{
+   margin-top: 30px;
+    text-align: center;
+    font-size: x-large;
+    color: black;
+       /*order: 4; order basically use to change position of a box*/
+       /*flex-basis: 400px;/*its use to make box width more or less than others*/
+      /* flex-grow: 2px;/*The grow speed will be 2%*/
+     /* flex-shrink: 2;*/
+
+   }
+   #Box3 p{
+    background-color: #f1eded;
+    color: black;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 45px;
+
+   }
+
+
+   #Box4 h1{
+   margin-top: 30px;
+    text-align: center;
+    font-size: x-large;
+    color: black;
+       /*order: 4; order basically use to change position of a box*/
+       /*flex-basis: 400px;/*its use to make box width more or less than others*/
+      /* flex-grow: 2px;/*The grow speed will be 2%*/
+     /* flex-shrink: 2;*/
+
+   }
+   #Box4 p{
+    background-color: #f1eded;
+    color: black;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+
+   }
+
+
+   #Box5 h1{
+   margin-top: 30px;
+    text-align: center;
+    font-size: x-large;
+    color: black;
+       /*order: 4; order basically use to change position of a box*/
+       /*flex-basis: 400px;/*its use to make box width more or less than others*/
+      /* flex-grow: 2px;/*The grow speed will be 2%*/
+     /* flex-shrink: 2;*/
+
+   }
+   #Box5 p{
+    background-color: #f1eded;
+    color: black;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+
+   }
+
+   #Order_Now_Button button {
+    margin-left: 600px;
+    margin-top: 20px;
+            padding: 15px 40px 10px 40px;
+            background-color: #f1eded;
+            border: 2px solid #c4b3b3;
+            color: black;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        #Order_Now_Button button:hover {
+        background-color: #c4b3b3;
+        transform: scale(1.05);
+        }
+.S4{
+    margin-top: 100px;
+    overflow: hidden;
+  background-color: #f1eded;
+
+}
+
+.S4 h1{
+            text-align: center;
+            font-size: xx-large;
+            font-family: Arial, sans-serif;;
+        }
+.S4 p{
+            color: black;
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        #P3,#P4,#P5{
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+
+
+        .FlexBox2{
+       
+       display: flex;/*The boxes willflex-wrap: wrap;/*When we minimize the screen, so the boxes will be cut down instead of making small*/
+      /* flex-direction: row-reverse;*//*It can be 'colum'/'column-reverse'/'row'/'row-reverse'*/
+       align-content: flex-end;/*Inorder to use property of align-content, we have to remove the height of the boxes*/
+       background-color: #f1eded;
+       margin-left: 20px;
+       margin-right: 20px;
+       margin-top: 50px;
+    }
+
+   .Boxo{
+      
+       width: 100%;
+       /*height: 500px;*/
+      height: 300px;
+   }
+   #Box6 h1{
+   margin-top: 30px;
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+       /*order: 4; order basically use to change position of a box*/
+       /*flex-basis: 400px;/*its use to make box width more or less than others*/
+      /* flex-grow: 2px;/*The grow speed will be 2%*/
+     /* flex-shrink: 2;*/
+
+   }
+   #Box6 p{
+    color: black;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 45px;
+
+   }
+
+   #Box7 h1{
+   margin-top: 30px;
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+       /*order: 4; order basically use to change position of a box*/
+       /*flex-basis: 400px;/*its use to make box width more or less than others*/
+      /* flex-grow: 2px;/*The grow speed will be 2%*/
+     /* flex-shrink: 2;*/
+
+   }
+   #Box7 p{
+    color: black;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 45px;
+
+
+   }
+
+
+   #Box8 h1{
+   margin-top: 30px;
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+       /*order: 4; order basically use to change position of a box*/
+       /*flex-basis: 400px;/*its use to make box width more or less than others*/
+      /* flex-grow: 2px;/*The grow speed will be 2%*/
+     /* flex-shrink: 2;*/
+
+   }
+   #Box8 p{
+    color: black;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 45px;
+
+   }
+
+.S5{
+    text-align: center;
+    background-color: #ebe0e0;
+    margin: 0;
+    padding: 0;
+}
+
+.clickme{
+    
+    padding: 8px 20px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.Founder_Image{
+    width: 150px;
+    height: 200px;
+    border: 2px solid #c4b3b3;
+    border-radius: 2px;
+    image-rendering: auto;
+}
+.S5 h2{
+    text-decoration: underline;
+}
+
+.S5 h3{
+    margin: 0px;
+}
+
+
+
+
+footer {
+  background-color: #c4b3b3;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  float: left;
+  color: black;
+}
+
+footer a:hover{
+    color: #f1eded;
+}
+
+
+       
+    
+        </style>
+    <title>Document</title>
+</head>
+<body>
+   <h1 class="Main-Heading"><i>Free Pick Up and Delievery</i></h1> 
+
+   <div class="container">
+    <div class="Items Items-container" id="Box1">
+        <h1><u>Ahsan Stitching Centre</u></h1>
+        <div id="D1"><a href="#">Home</a></div>
+        <div id="D2"><a href="#">Login</a></div>
+        <div id="D3"><a href="Payment-Form.html" target="_blank">Pay</a></div>
+        <div id="D4"><a href="About-Page.html" target="_blank">Contact Us</a></div>
+        <div id="D5"><a href="About-Page.html" target="_blank">About</a></div>
+
+        <div id="D7"><button onclick="openNewPage()" type="button">Order Now!</button></div>
+
+    </div>
+</div>
+      <main>
+        <section class="S1">
+        <h1>Online Stitching Service</h1>
+    </section>
+
+    <section class="S2">
+        <div class="D1">
+        <img id="P1" src="D1.jpg" alt="D1"   width="250px" height="400px">
+        <img id="P2" src="D11.jpg" alt="D1"  width="250px" height="400px">
+    </div>
+
+    <h1> Ahsan Stitching</h1>
+    <h2><i>The Stitching Hub</i></h2>
+<p>Ahsan Stitching Center is a young & spirited company, that aims to provide hassle-free, and 
+    enjoyable online tailoring experience with all-new designs and patterns with a 
+    team of talented designers. We aim to provide you a memorable tailoring 
+    experience with a one-stop solution for all kinds of stitching work. 
+    Sohaay offers complete tailoring & alterations services, including suit 
+    tailoring with professional fittings or alterations to your finest pieces. 
+    Our skilled master tailors handle all of our cutting and sewing, ensuring 
+    precision in all production processes and paying attention to the details.
+     We offer free measurements, pick-up, and delivery service with quality and on-time delivery.</p>
+
+     <div id="Learn_Button"><button type="button"><a href="About-Page.html" target="_blank">!</a>Learn More About Us</button></div>
+
+    </section>
+
+
+    <section class="S3">
+        <h1><strong>HOW IT WORKS</strong></h1>
+        <p>One of the reasons we are the best Online Tailor Service In Faisalabad is because we
+             have the simplest process.</p>>
+
+        
+
+             <div class="FlexBox1">
+                <div class="Box" id="Box1"><h1>Place Your Order</h1>
+                  <p>Place your order online to book a 
+                    stitch at your home or you can also 
+                    place an order by visiting our workshop.</p></div>
+                <div class="Box" id="Box2"><h1>Picking Your Sample Design</h1>
+                <p>The rider will come to pick your dress material along with
+                     the sample dress that fits you perfectly or hand over it
+                      on our workshop.</p></div>
+                <div class="Box" id="Box3"><h1>Stitch In Progress</h1>
+                <p>We will stitch the design of your choices or you
+                     can select designs from our product design catalog.</p></div>
+                <div class="Box" id="Box4"><h1>Free Delievery In 7 Days</h1>
+                <p>Your custom-tailored dress along with your sample dress 
+                    will be properly packaged and it will be safely and 
+                    securely delivered at your doorstep within 7-10 days 
+                    (Both pickup and delivery services are free of cost).</p></div>
+                <div class="Box" id="Box5"><h1>Cash On Delivery Or Pay Online</h1>
+                <p>Cash on delivery service, pay by cash after you receive your
+                     newly stitched cloth (Other payment methods are also available)
+                     Or Pay Online through Online Pay Form.</p></div>
+        
+        
+            </div>       
+
+            <div id="Order_Now_Button"><button onclick="openNewPage()" type="button">Place An Order</button></div>
+
+
+    </section>
+
+    <section class="S4">
+           <h1>OUR SERVICES</h1>
+           <p>Our Vision is to become externally bench marked
+             online tailoring service providor in Karachi, Pakistan.
+              Our goal is to provide best services, values and 
+              continous improvements and innovative styles.</p>
+
+               <img id="P3" src="T20.jpg">
+              <img id="P4" src="T21.jpg">
+              <img id="P5" src="T22.jpg">
+
+
+              <div class="FlexBox2">
+                <div class="Boxo" id="Box6"><h1>STITCHING</h1>
+                  <p>We provide premium quality stitching services.
+                     We collect the fabric from your doorsteps,
+                     stitch it to the finest quality, and deliver
+                     it back to you on time.</p></div>
+                <div class="Boxo" id="Box7"><h1>DESIGNING                </h1>
+                <p>Boost your fashion business or start your own 
+                    clothing line. We offer business guidance and 
+                    assistance for emerging designers, brands.</p></div>
+                <div class="Boxo" id="Box8"><h1>ALTERATIONS                </h1>
+                <p>Alteration services at your doorstep. Get your
+                    dream dress altered by professional tailors 
+                    with free pickup and cash on delivery.</p></div>
+        
+        
+            </div>
+
+    </section>
+
+
+    <section class="S5">
+        <h2>Our Founder</h2>
+        <img class="Founder_Image" src="Ahsan_Formal_Image.jpg" height="100%" alt="Founder" height="350px">
+        <h3>This is Ahsan Asim</h3>
+        <div class="clickme">
+        <a href="www.youtube.com" alt="Youtube Link" >Youtube</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="www.google.com" alt="Google Link" >Google</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="www.instagram.com" alt="Instagram Link" >Instagram</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    </div>
+    
+
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="About-Page.html">Contact us</a>
+        <a href="#">Login</a>
+        <a href="#">Secure</a>
+        <a href="#">About US</a>
+    </footer>
+
+</section>
+
+
+
+    </main>
+
+    <script>
+        function openNewPage() {
+            // Replace 'newpage.html' with the URL of the page you want to open.
+            window.open('Order.html', '_blank');
+        }
+    </script>
+
+
+   
+</body>
+</html>
